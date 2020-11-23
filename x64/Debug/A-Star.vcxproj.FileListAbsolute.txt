@@ -1,0 +1,6 @@
+C:\Users\pk-2105\source\repos\A-Star\x64\Debug\A-Star.exe
+C:\Users\pk-2105\source\repos\A-Star\x64\Debug\A-Star.pdb
+C:\Users\admin\Desktop\A-Star\A-Star\x64\Debug\A-Star.exe
+C:\Users\admin\Desktop\A-Star\A-Star\x64\Debug\A-Star.pdb
+C:\Users\pk-2105\Desktop\A-Star (2)\A-Star\x64\Debug\A-Star.exe
+C:\Users\pk-2105\Desktop\A-Star (2)\A-Star\x64\Debug\A-Star.pdb
