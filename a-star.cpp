@@ -19,11 +19,11 @@ int main() {
 	Map.ShowMap(list<Node*>());				// 전
 	cout << "==============================" << endl;
 	
-	Path path(&Map);					// 맵에 대한 경로 생성
+	Path path(&Map);					// 맵에 대한 경로 선언
 	
-	auto nodeList = path.DoFindPath(startloc, endloc);	// 후
+	auto nodeList = path.DoFindPath(startloc, endloc);	// 최적 경로 탐색
 	cout << endl;
-	Map.ShowMap(list<Node*>());
+	Map.ShowMap(list<Node*>());				// 후
 
 	return 0;
 }
