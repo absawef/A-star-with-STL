@@ -6,23 +6,22 @@
 using namespace std;
 
 int main() {
-	int mapRow = 10;
-	int mapCol = 10;
+	int mapRow = 10;				// ë§µì˜ í¬ê¸°
+	int mapCol = 10;		
 	
-	MyMap Map;								// ¸Ê Á¤ÀÇ
-	Map.setRowCol(mapRow,mapCol);
-
-	Point startloc = Point::Point(0,0);		// ½ÃÀÛ ÁöÁ¡°ú ¸ñÇ¥ ÁöÁ¡
+	Point startloc = Point::Point(0,0);		// ì‹œì‘ ì§€ì ê³¼ ëª©í‘œ ì§€ì 
 	Point endloc = Point::Point(9,9);	
+	
+	MyMap Map;					// ë§µ ì •ì˜
+	Map.setRowCol(mapRow,mapCol);			// ë§µ í¬ê¸° í• ë‹¹
+	Map.CreateMap(startloc, endloc);		// ì‹œì‘ ì§€ì ê³¼ ì¢…ë£Œ ì§€ì  ì „ë‹¬ & ìµœì¢… ë§µ ìƒì„±
 
-	Map.CreateMap(startloc, endloc);		// ¸Ê »ı¼º
-
-	Path path(&Map);						// ¸Ê¿¡ ´ëÇÑ °æ·Î »ı¼º
-
-	Map.ShowMap(list<Node*>());							// Àü
+	Map.ShowMap(list<Node*>());				// ì „
 	cout << "==============================" << endl;
-
-	auto nodeList = path.DoFindPath(startloc, endloc);	// ÈÄ
+	
+	Path path(&Map);					// ë§µì— ëŒ€í•œ ê²½ë¡œ ìƒì„±
+	
+	auto nodeList = path.DoFindPath(startloc, endloc);	// í›„
 	cout << endl;
 	Map.ShowMap(list<Node*>());
 
