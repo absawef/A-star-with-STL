@@ -12,8 +12,8 @@ int main() {
 	Point startloc = Point::Point(0,0);		// 시작 지점과 목표 지점
 	Point endloc = Point::Point(9,9);	
 	
-	MyMap Map;					// 맵 정의
-	Map.setRowCol(mapRow,mapCol);			// 맵 크기 할당
+	MyMap Map;					// 맵 선언
+	Map.setRowCol(mapRow,mapCol);			// 맵 크기 부여
 	Map.CreateMap(startloc, endloc);		// 시작 지점과 종료 지점 전달 & 최종 맵 생성
 
 	Map.ShowMap(list<Node*>());				// 전
